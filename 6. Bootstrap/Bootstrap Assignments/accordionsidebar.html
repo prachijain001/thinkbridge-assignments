@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accordion Sidebar</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar bg-light">
+        <h2>Accordion Sidebar</h2>
+        <div>
+          <button class="accordion btn btn-link" data-toggle="collapse" data-target="#home-collapse">
+            <i class="fas fa-home"></i> Home
+          </button>
+        </div>
+
+        <button class="accordion btn btn-link" data-toggle="collapse" data-target="#products-collapse">
+          <i class="fas fa-shopping-bag"></i> Products <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="panel collapse" id="products-collapse">
+          <button class="sub-accordion btn btn-link">
+            <i class="fas fa-tshirt"></i> Fashion
+          </button>
+
+          <button class="sub-accordion btn btn-link">
+            <i class="fas fa-mobile-alt"></i> Electronics
+          </button>
+
+          <button class="sub-accordion btn btn-link">
+            <i class="fas fa-blender"></i> Appliances
+          </button>
+        </div>
+
+        <button class="accordion btn btn-link" data-toggle="collapse" data-target="#events-collapse">
+          <i class="far fa-calendar-alt"></i> Events <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="panel collapse" id="events-collapse">
+          <button class="sub-accordion btn btn-link">
+            <i class="far fa-calendar-check"></i> Today
+          </button>
+
+          <button class="sub-accordion btn btn-link">
+            <i class="far fa-calendar-alt"></i> This Month
+          </button>
+
+          <button class="sub-accordion btn btn-link">
+            <i class="far fa-calendar-alt"></i> This Year 
+          </button>
+        </div>
+
+        <button class="accordion btn btn-link" data-toggle="collapse" data-target="#contact-collapse">
+          <i class="fas fa-address-book"></i> Contact
+        </button>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    
+.sidebar {
+  background-color: #67696b;
+  height:97vh;
+  width: 30vw;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sidebar a:hover {
+  background-color: #e9ecef;
+}
+
+.accordion {
+  background-color: #67696b;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.accordion:hover {
+  background-color: #e9ecef;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+</style>
+</body>
+</html>

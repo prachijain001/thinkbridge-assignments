@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar demo</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom CSS -->
+  <style>
+    .sidebar h2{
+        text-align: center;
+    }
+
+    .sidebar {
+      background-color: #67696b;
+      height:97vh;
+      width: 30vw;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+      list-style-type: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #e9ecef;
+    }
+
+    .mystyle{
+        list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-lg-2 sidebar"><h2>Sidebar Demo</h2>
+        <ul class="nav flex-column mystyle" >
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="material-icons">description</i> Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="material-icons">shopping_cart</i> Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="material-icons">info</i> About</a>
+          </li>
+          <li class="nav-item">
+            <a><i class="material-icons">mail</i> Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9 col-lg-10">
+        <!-- Main content goes here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
